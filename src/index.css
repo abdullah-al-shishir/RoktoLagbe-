@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%); /* Start completely above */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* End at its natural position */
+    opacity: 1;
+  }
+}
+.animate-slideInFromTop {
+  animation: slideInFromTop 0.5s ease-out forwards;
+}
