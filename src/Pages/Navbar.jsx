@@ -4,7 +4,7 @@ import { FaPeopleRoof } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <div className="bg-[#e02a2a] flex justify-between items-center p-3">
+    <div className="bg-[#e02a2a] flex justify-between items-center p-3 sticky top-0">
       {/*  */}
       <div className="flex text-white items-center">
         <FaDroplet className="text-xl" />

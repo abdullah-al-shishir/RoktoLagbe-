@@ -79,7 +79,7 @@ const Bloodlist = () => {
       ? "bg-green-200 text-green-800"
       : "bg-red-200 text-red-800";
   };
-  //   Information
+  // 	Information
   const information = [
     {
       info: " O- হচ্ছে সার্বজনীন দাতা (Universal Donor) - সকল গ্রুপের রোগীকে রক্ত দিতে পারে",
@@ -97,7 +97,7 @@ const Bloodlist = () => {
 
   return (
     <div className="p-2 sm:p-6 bg-gray-50 min-h-screen ">
-      <div className="bg-white shadow-xl rounded-lg px-5 py-6">
+      <div className="bg-white shadow-lg rounded-lg px-5 py-6">
         <h1 className="text-[27px] font-extrabold mb-2 text-red-700 text-center">
           কে কাকে রক্ত দিতে পারবে?
         </h1>
@@ -106,13 +106,14 @@ const Bloodlist = () => {
         </p>
 
         <div className="BloodCompatibilityTable">
-          <div className="overflow-x-auto  border border-gray-300">
+          <div className="overflow-x-auto  border border-gray-300">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-200">
                 <tr>
                   <th
                     scope="col"
-                    className="px-4 py-3 text-left text-sm font-bold text-gray-700 uppercase tracking-wider whitespace-nowrap sticky left-0 z-10 bg-gray-200 border-r border-gray-300"
+                    // REMOVED 'sticky', 'left-0', and 'z-10' from the Donor TH, but kept the background color
+                    className="px-4 py-3 text-left text-sm font-bold text-gray-700 uppercase tracking-wider bg-gray-200 border-r border-gray-300"
                   >
                     Donor (দাতা)
                   </th>
@@ -120,7 +121,7 @@ const Bloodlist = () => {
                     <th
                       key={group}
                       scope="col"
-                      className="px-4 py-3 text-center text-sm font-bold text-gray-700 uppercase tracking-wider whitespace-nowrap"
+                      className="px-4 py-3 text-center text-sm font-bold text-gray-700 uppercase "
                     >
                       {group}
                     </th>
@@ -131,7 +132,10 @@ const Bloodlist = () => {
               <tbody className="bg-white divide-y divide-gray-200">
                 {compatibilityData.map((donor) => (
                   <tr key={donor.group}>
-                    <td className="px-4 py-4 whitespace-nowrap text-sm font-extrabold text-gray-900 sticky left-0 z-10 bg-gray-100 border-r border-gray-300">
+                    <td
+                      // REMOVED 'sticky left-0 z-10'
+                      className="px-4 py-4 whitespace-nowrap text-sm font-extrabold text-gray-900 bg-gray-100 border-r border-gray-300"
+                    >
                       {donor.group}
                     </td>
 
@@ -151,13 +155,13 @@ const Bloodlist = () => {
             </table>
           </div>
         </div>
-        {/* Information  */}
-        <div className="bg-red-100 p-4 rounded-2xl mt-6">
+        {/* Information 	*/}
+        <div className="bg-red-100 p-4 rounded-lg mt-6">
           <p className="text-red-800 text-lg font-bold">গুরুত্বপূর্ণ তথ্য:</p>
           <ul className="list-disc ml-5 space-y-2">
-            {information.map((infoo) => {
+            {information.map((infoo, index) => {
               return (
-                <div>
+                <div key={index}>
                   <li>{infoo.info}</li>
                 </div>
               );
