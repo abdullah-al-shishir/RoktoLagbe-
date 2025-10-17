@@ -96,7 +96,7 @@ const Bloodlist = () => {
   ];
 
   return (
-    <div className="p-2 sm:p-6 bg-gray-50 min-h-screen ">
+    <div className="p-2 sm:p-6  min-h-screen ">
       <div className="bg-white shadow-lg rounded-lg px-5 py-6">
         <h1 className="text-[27px] font-extrabold mb-2 text-red-700 text-center">
           কে কাকে রক্ত দিতে পারবে?
