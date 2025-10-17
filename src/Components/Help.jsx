@@ -18,7 +18,7 @@ const Help = () => {
             <RiBankCardFill className="text-white text-xl" />
           </div>
           <div className="text-left ml-4">
-            <h1 className="text-lg sm:text-[27px] font-extrabold text-red-700 ">
+            <h1 className="text-md font-extrabold text-red-700 ">
               বিকাশ & নগদ (P)
             </h1>
             <h1 className="">01773959737</h1>
