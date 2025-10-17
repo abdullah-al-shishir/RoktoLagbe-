@@ -16,7 +16,7 @@ const Navbar = () => {
         className="flex  items-center text-red-600 mx-1 bg-white p-2 mr-0.5 rounded-lg hover:cursor-pointer hover:bg-red-100"
       >
         <FaPeopleRoof />
-        <span className="mx-1.5">নিবন্ধন করুন</span>
+        <span className="mx-1.5 hind-siliguri-regular">নিবন্ধন করুন</span>
       </button>
     </div>
   );

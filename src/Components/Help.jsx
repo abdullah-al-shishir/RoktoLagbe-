@@ -13,11 +13,11 @@ const Help = () => {
           কার্যক্রম চালিয়ে যেতে সাহায্য করবে।
         </p>
         {/* Bkash and Number */}
-        <div className="flex items-center bg-red-50 mt-6 mb-2 p-3">
+        <div className="flex items-center bg-red-50 mt-6 mb-2 p-3 rounded-lg">
           <div className="bg-[#e02a2a] px-4 py-5 rounded-[43%] ">
             <RiBankCardFill className="text-white text-xl" />
           </div>
-          <div className="text-left ml-4">
+          <div className="text-left ml-4 ">
             <h1 className="text-md font-extrabold text-red-700 ">
               বিকাশ & নগদ (P)
             </h1>
