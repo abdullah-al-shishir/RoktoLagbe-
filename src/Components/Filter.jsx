@@ -4,7 +4,7 @@ const Filter = () => {
   const selectStyle =
     "border border-gray-300 p-3 rounded-md text-sm text-gray-900";
   return (
-    <div className="p-2 sm:p-6">
+    <div className="p-2 py-4 sm:p-6">
       <div className="bg-white shadow-lg rounded-lg px-5 pt-6">
         <h1 className="text-[27px] font-extrabold mb-2 text-red-700 text-center">
           রক্তদাতা খুঁজুন
@@ -72,7 +72,10 @@ const Filter = () => {
         </div>
         {/* Find btn */}
         <div className="flex items-center justify-center">
-          <button type="submit" className="my-5">
+          <button
+            type="submit"
+            className="mb-6 mt-2 px-4.5 py-3 bg-[#b62c2c] text-white rounded-lg font-semibold hover:cursor-pointer hover:bg-[#8f2222] transition 0.1s"
+          >
             অনুসন্ধান করুন
           </button>
         </div>
