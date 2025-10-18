@@ -4,11 +4,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Navbar from "./Pages/Navbar";
 import Footer from "./Pages/Footer";
+import MODAL from "./Pages/Modal";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <MODAL />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

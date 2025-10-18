@@ -112,7 +112,6 @@ const Bloodlist = () => {
                 <tr>
                   <th
                     scope="col"
-                    // REMOVED 'sticky', 'left-0', and 'z-10' from the Donor TH, but kept the background color
                     className="px-4 py-3 text-left text-sm font-bold text-gray-700 uppercase tracking-wider bg-gray-200 border-r border-gray-300"
                   >
                     Donor (দাতা)
