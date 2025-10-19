@@ -82,21 +82,21 @@ const Bloodlist = () => {
   // 	Information
   const information = [
     {
-      info: " O- হচ্ছে সার্বজনীন দাতা (Universal Donor) - সকল গ্রুপের রোগীকে রক্ত দিতে পারে",
+      info: " O- হচ্ছে সার্বজনীন দাতা (Universal Donor) - সকল গ্রুপের রোগীকে রক্ত দিতে পারে।",
     },
     {
-      info: " AB+ হচ্ছে সার্বজনীন গ্রহীতা (Universal Recipient) - সকল গ্রুপের রক্ত গ্রহণ করতে পারে",
+      info: " AB+ হচ্ছে সার্বজনীন গ্রহীতা (Universal Recipient) - সকল গ্রুপের রক্ত গ্রহণ করতে পারে।",
     },
     {
-      info: "O+ গ্রুপের রক্ত সব পজিটিভ গ্রুপের রোগীকে দেওয়া যায়",
+      info: "O+ গ্রুপের রক্ত সব পজিটিভ গ্রুপের রোগীকে দেওয়া যায়।",
     },
     {
-      info: " নেগেটিভ গ্রুপের রক্ত নেগেটিভ এবং পজিটিভ উভয় গ্রুপের রোগীকে দেওয়া যায়",
+      info: " নেগেটিভ গ্রুপের রক্ত নেগেটিভ এবং পজিটিভ উভয় গ্রুপের রোগীকে দেওয়া যায়।",
     },
   ];
 
   return (
-    <div className="p-2 sm:p-6 mt-6.5 min-h-screen ">
+    <div className="p-2 sm:p-6 mt-6.5 md:mt-0 min-h-screen ">
       <div className="bg-white shadow-lg rounded-lg px-5 py-6">
         <h1 className="text-[27px] font-extrabold mb-2 text-red-700 text-center">
           কে কাকে রক্ত দিতে পারবে?

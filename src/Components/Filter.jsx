@@ -5,7 +5,7 @@ const Filter = () => {
     "border border-gray-300 p-3 rounded-md text-sm text-gray-900";
   return (
     <div className="p-2 py-4 sm:p-6">
-      <div className="bg-white shadow-lg rounded-lg px-5 pt-6">
+      <div className="bg-white shadow-lg rounded-lg px-5 pt-5 md:pt-3">
         <h1 className="text-[27px] font-extrabold mb-2 text-red-700 text-center">
           রক্তদাতা খুঁজুন
         </h1>

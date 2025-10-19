@@ -25,8 +25,16 @@ const Modal = ({ message, onClose }) => {
             আপনার নাম্বার, শেষ রক্তদানের তারিখ ও কোনো সমস্যা বা অভিযোগ
             মেসেঞ্জারে জানান।
           </p>
-          <button className="text-[12px] bg-[#007FFF] hover:bg-[#0769cb] hover:cursor-pointer flex justify-center items-center text-white  p-2 font-semibold py-3 rounded-lg transition duration-200 shadow-md">
-            <BiLogoMessenger className="text-2xl" /> মেসেঞ্জারে মেসেজ করুন
+          <button className="text-[12px] bg-[#007FFF] hover:bg-[#0769cb] hover:cursor-pointer flex justify-center items-center text-white p-2 font-semibold py-3 rounded-lg transition duration-200 shadow-md">
+            <a
+              href="https://www.facebook.com/abdullah.shishir4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2"
+            >
+              <BiLogoMessenger className="text-2xl" />
+              <span>মেসেঞ্জারে মেসেজ করুন</span>
+            </a>
           </button>
         </div>
 
