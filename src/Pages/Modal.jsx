@@ -7,6 +7,7 @@ const Modal = ({ message, onClose }) => {
       className="fixed inset-0 bg-black/40 flex items-center justify-center z-50"
       style={{ backdropFilter: "blur(3px)" }}
     >
+      {/* Modal Pop-up message content */}
       <div className="bg-white p-8 rounded-xl shadow-2xl max-w-md w-full mx-4 animate-slideInFromTop text-center font-bold text-sm">
         <h2 className="text-2xl text-red-600 mb-4 border-b pb-2 ">দ্রষ্টব্য</h2>
         <div className="bg-amber-100 rounded-lg">
@@ -24,7 +25,7 @@ const Modal = ({ message, onClose }) => {
             আপনার নাম্বার, শেষ রক্তদানের তারিখ ও কোনো সমস্যা বা অভিযোগ
             মেসেঞ্জারে জানান।
           </p>
-          <button className="bg-[#007FFF] hover:bg-[#0769cb] hover:cursor-pointer w-1/2 max-w-xs mx-auto flex justify-center items-center text-white text-[11px] p-2 font-semibold py-3 rounded-lg transition duration-200 shadow-md">
+          <button className="text-[12px] bg-[#007FFF] hover:bg-[#0769cb] hover:cursor-pointer flex justify-center items-center text-white  p-2 font-semibold py-3 rounded-lg transition duration-200 shadow-md">
             <BiLogoMessenger className="text-2xl" /> মেসেঞ্জারে মেসেজ করুন
           </button>
         </div>
@@ -53,7 +54,7 @@ const MODAL = () => {
     <div className="flex items-center justify-center">
       {isModalOpen && (
         <Modal
-          message="যিনি রক্ত নিবেন, রক্তদাতার যাতায়াতসহ যাবতীয় খরচ বহন করবেন — এটাই মানবিক দায়িত্ব।"
+          message={`যিনি রক্ত নিবেন, রক্তদাতার যাতায়াতসহ যাবতীয় খরচ বহন করবেন — এটাই মানবিক দায়িত্ব।`}
           onClose={handleConfirm}
         />
       )}

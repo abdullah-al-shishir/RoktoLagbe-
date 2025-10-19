@@ -74,7 +74,7 @@ const Filter = () => {
         <div className="flex items-center justify-center">
           <button
             type="submit"
-            className="mb-6 mt-2 px-4.5 py-3 bg-[#b62c2c] text-white rounded-lg font-semibold hover:cursor-pointer hover:bg-[#8f2222] transition 0.1s"
+            className="mb-6 mt-2 px-4.5 py-3 bg-[#b62c2c] text-white rounded-lg font-semibold hover:cursor-pointer hover:bg-[#8f2222] transition 0.8s"
           >
             অনুসন্ধান করুন
           </button>
