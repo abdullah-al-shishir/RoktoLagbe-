@@ -1,5 +1,6 @@
 import React from "react";
 import { GiConfirmed } from "react-icons/gi";
+import { ImCross } from "react-icons/im";
 
 const Registration = ({ onSubmitRegi }) => {
   const borderStyle =
@@ -11,17 +12,22 @@ const Registration = ({ onSubmitRegi }) => {
       className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
       style={{ backdropFilter: "blur(0px)" }}
     >
-      {/* ✅ WIDTH FIX: 
-        1. Base width is w-full mx-4 (full width with 1rem margin on small screens).
-        2. From the MD breakpoint, it's constrained to a larger size (max-w-xl) and centered with mx-auto.
-      */}
       <div className="bg-white px-4 py-7 rounded-xl shadow-2xl w-full mx-4 md:max-w-xl md:mx-auto animate-slideInFromTop font-bold text-sm max-h-[90vh] overflow-y-auto">
-        <h2 className="text-[22px] text-red-800 mb-4 pb-2 text-center">
-          রক্তদাতা হিসেবে নিবন্ধন
-        </h2>
+        {/* Title with close btn */}
+        <div className="flex justify-between items-center w-full p-4 border-b-2 border-red-800">
+          <h2 className="w-full text-[19px] text-red-800 font-bold text-center">
+            রক্তদাতা হিসেবে নিবন্ধন
+          </h2>
+          {/* Close btn */}
+          <button
+            onClick={onSubmitRegi}
+            className="absolute right-4 text-red-700 hover:text-red-900 cursor-pointer text-lg p-1"
+          >
+            <ImCross />
+          </button>
+        </div>
 
         <div className="px-2">
-          {/* Name and Blood Group remain side-by-side and fill the available width */}
           <div className="md:flex gap-4">
             {/* নাম */}
             <div className="grid mt-3 gap-y-3 flex-1">

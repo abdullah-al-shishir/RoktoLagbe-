@@ -44,9 +44,29 @@ const Footer = () => {
           <h2 className="text-xl font-bold">অনুসরণ করুন</h2>
           {/* Social */}
           <div className="flex items-center gap-x-3 text-[40px] my-3">
-            <FaFacebook className={socialLink} />
-            <FaYoutube className={socialLink} />
-            <FaGithub className={socialLink} />
+            <a
+              href="https://www.facebook.com/abdullah.shishir4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook className={socialLink} />
+            </a>
+
+            <a
+              href="https://www.youtube.com/@Easyphysicsbyshishir4155"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube className={socialLink} />
+            </a>
+
+            <a
+              href="https://github.com/abdullah-al-shishir"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className={socialLink} />
+            </a>
           </div>
         </div>
       </div>
